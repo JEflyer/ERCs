@@ -1,0 +1,22 @@
+ERC9988 / XMF-NFTs / Extended Multiphase Fractional NFTs
+
+ABSTRACT
+The ERC-9988 standard introduces a novel framework for assets that can be fractionally owned and undergo various phases of transformation, extending beyond the capabilities of existing ERC-721 and ERC-20 standards. By enabling each ERC-721 NFT to be broken down into fungible phase-based tokens (PB Tokens) that can transition through multiple phases to represent different states or conditions of the underlying asset, ERC-9988 provides a dynamic model for asset representation and management on the Ethereum blockchain.
+
+SPECIFICATION
+Phase Tokens (PB Tokens)
+-PB Tokens are fungible tokens associated with each phase of an ERC-721 NFT, representing fractional ownership or attributes of the NFT at a given state.
+-While PB Tokens share similarities with ERC-20 tokens in terms of fungibility within their respective phases, they are managed within the ERC-9988 contract to accommodate multiple phases and the unique behaviors associated with transitioning between these phases.
+
+Backwards Compatibility
+-ERC-9988 introduces a new paradigm that extends the ERC-721 standard by allowing NFTs to be broken down into fungible, phase-specific tokens. These phase tokens, while fungible within their phase, do not conform to the ERC-20 standard in isolation due to the additional logic required to manage phase transitions and the relationship to the parent ERC-721 NFT.
+-PB Tokens should be understood as an extension of the NFT's lifecycle and attributes, rather than independent ERC-20 tokens. This distinction is crucial for correctly integrating and interacting with ERC-9988 assets within Ethereum applications and wallets.
+
+Conclusion
+The ERC-9988 proposal aims to bridge the gap between non-fungible and fungible token standards by introducing a flexible and comprehensive framework for assets that evolve over time. This standard acknowledges the complexity of real-world assets and digital representations that cannot be fully captured by existing token models, offering a solution that respects the nuances of asset transformation and phase progression.
+
+Repository with implementation
+https://github.com/JEflyer/ERC9988
+
+Explainer Website
+https://www.erc9988.info
